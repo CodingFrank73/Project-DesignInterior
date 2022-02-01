@@ -7,12 +7,24 @@ Farbe: #2e2e2e / #fff / #000 / #1d2c2f
     src: url(../fonts/Work_Sans/WorkSans-VariableFont_wght.ttf);
 }
 
+@font-face {
+    font-family: Lora;
+    src: url(../fonts/Lora/Lora-VariableFont_wght.ttf);
+}
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
-h1{
+
+h1, h2{
+    font-family: Lora;
+}
+
+a, p{
     font-family: WorkSans;
 }
 
@@ -25,6 +37,13 @@ ul{
     list-style: none;
 }
 
+/* ---------- generalClasses ---------- */
+
+.gridContainer{
+    height: 100%;
+    display: grid;
+}
+
 /* ------------ header ------------ */
 header{
     display: grid;
@@ -33,10 +52,7 @@ header{
 }
 
 .picHeadline{
-    background: url(../img/design-interior-1.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background: url(../img/design-interior-1.jpg) no-repeat center/cover;
 }
 
 .containerLeftHeader{
@@ -67,18 +83,13 @@ header{
     background-color: lightpink;
 }
 
-.containerStory{
-    height: 100%;
-    display: grid;
+.story{
     grid-template-columns: 60% 40%;
     padding: 20vh 0;
 }
 
 .picStory{
-    background: url(../img/story.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background: url(../img/story.jpg) no-repeat center/cover;
 }
 
 .containerStoryText{
@@ -89,20 +100,13 @@ header{
 /* ---------- section: Designs ---------- */
 
 #designs{
-    /* height: 120vh; */
+    height: 140vh;
     background-color: lightyellow;
-}
-
-.containerDesigns{
-    height: 100%;
-    display: grid;
-    /* grid-template-rows: 40% 1fr 40%; */
-    grid-template-rows: 55vh 40vh 50vh;
 }
 
 .containerDesignsTop{
     text-align: center;
-    margin: 20% 0;
+    margin: 14% 0;
 }
 
 .containerDesignsMiddle{
@@ -120,6 +124,7 @@ header{
 .picDesigns img{
     width: 100%;
 }
+
 figcaption{
     text-align: center;
 }
@@ -128,7 +133,6 @@ figcaption{
     margin: 20px auto;
 }
 
-
 /* ---------- section: Contact ---------- */
 
 #contact{
@@ -136,16 +140,13 @@ figcaption{
     background-color: lightseagreen;
 }
 
-.containerContact{
-    height: 100%;
-    display: grid;
+.contact{
     grid-template-columns: 60% 40%;
 }
 
 .contactForm{
     display: grid;
 }
-
 
 /* ---------- footer --------- */
 
