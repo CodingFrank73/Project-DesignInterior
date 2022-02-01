@@ -1,12 +1,19 @@
 /* Font: Lora/ Work sans
 Farbe: #2e2e2e / #fff / #000 / #1d2c2f 
-Link Youtube
  */
+
+@font-face {
+    font-family: WorkSans;
+    src: url(../fonts/Work_Sans/WorkSans-VariableFont_wght.ttf);
+}
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+h1{
+    font-family: WorkSans;
 }
 
 a{
@@ -16,7 +23,6 @@ a{
 
 ul{
     list-style: none;
-    
 }
 
 /* ------------ header ------------ */
@@ -136,5 +142,26 @@ figcaption{
     grid-template-columns: 60% 40%;
 }
 
+.contactForm{
+    display: grid;
+}
+
 
 /* ---------- footer --------- */
+
+footer{
+    background-color: #1d2c2f;
+}
+
+.navContainerBottom{
+    height: 6vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navContainerBottomLeft{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
