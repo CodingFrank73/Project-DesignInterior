@@ -1,0 +1,140 @@
+/* Font: Lora/ Work sans
+Farbe: #2e2e2e / #fff / #000 / #1d2c2f 
+Link Youtube
+ */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+    
+}
+
+/* ------------ header ------------ */
+header{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 40% 60%;
+}
+
+.picHeadline{
+    background: url(../img/design-interior-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.containerLeftHeader{
+    text-align: center;
+    margin-top: 50%;
+}
+
+/* ------------ main ----------- */
+.navTop{
+    height: 10vh;
+    position: sticky;
+    top: 0px;
+    background-color: #2e2e2e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navLinks{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+/* ---------- section: OurStory ---------- */
+
+#ourStory{
+    height: 90vh;
+    background-color: lightpink;
+}
+
+.containerStory{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    padding: 20vh 0;
+}
+
+.picStory{
+    background: url(../img/story.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.containerStoryText{
+    text-align: center;
+    margin: 25% 0;
+}
+
+/* ---------- section: Designs ---------- */
+
+#designs{
+    /* height: 120vh; */
+    background-color: lightyellow;
+}
+
+.containerDesigns{
+    height: 100%;
+    display: grid;
+    /* grid-template-rows: 40% 1fr 40%; */
+    grid-template-rows: 55vh 40vh 50vh;
+}
+
+.containerDesignsTop{
+    text-align: center;
+    margin: 20% 0;
+}
+
+.containerDesignsMiddle{
+    border: 1px solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.picDesigns{
+    width: 30%;
+}
+
+.picDesigns img{
+    width: 100%;
+}
+figcaption{
+    text-align: center;
+}
+
+.containerDesginsBottom{
+    margin: 20px auto;
+}
+
+
+/* ---------- section: Contact ---------- */
+
+#contact{
+    height: 90vh;
+    background-color: lightseagreen;
+}
+
+.containerContact{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+
+/* ---------- footer --------- */
