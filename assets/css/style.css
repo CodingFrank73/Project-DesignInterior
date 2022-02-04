@@ -2,15 +2,11 @@
 Farbe: #2e2e2e / #fff / #000 / #1d2c2f 
  */
 
-@font-face {
-    font-family: WorkSans;
-    src: url(../fonts/Work_Sans/WorkSans-VariableFont_wght.ttf);
-}
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Work+Sans:wght@200;300;400;500;600&display=swap');
 
-@font-face {
-    font-family: Lora;
-    src: url(../fonts/Lora/Lora-VariableFont_wght.ttf);
-}
+
+/* font-family: 'Lora', serif;
+font-family: 'Work Sans', sans-serif; */
 
 *{
     margin: 0;
@@ -20,15 +16,18 @@ Farbe: #2e2e2e / #fff / #000 / #1d2c2f
 }
 
 h1, h2{
-    font-family: Lora;
+    font-family: 'Lora', serif;
 }
 
 h2{
     font-size: 2.3rem;
+    margin-bottom: 10px;
+    text-align: center;
 }
 
 a, p{
-    font-family: WorkSans;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
 }
 
 p{
@@ -94,6 +93,7 @@ header article:nth-of-type(2){
     justify-content: space-between;
     align-items: center;
 }
+
 .navLinks{
     display: flex;
     justify-content: space-between;
@@ -102,11 +102,10 @@ header article:nth-of-type(2){
 }
 
 /* ---------- section: OurStory ---------- */
-
 #ourStory{
     background-color: #2e2e2e;
     display: flex;
-    padding: 18vh 0;
+    padding: 22vh 0;
 }
 
 .story-pic{
@@ -115,19 +114,15 @@ header article:nth-of-type(2){
 
 .story-text{
     width: 47%;
-    padding: 4% 8% 8% 6%;
+    padding: 4% 3% 8% 3%;
 }
 
 .story-text h2, .story-text p{
     color: #fff;
 }
 
-.story-text h2{
-    text-align: center;
-    margin-bottom: 10px;
-}
-
 .story-text p{
+    font-size: 1.3rem;
     text-align: justify;
     line-height: 30px;
     margin-bottom: 20px;
@@ -135,39 +130,46 @@ header article:nth-of-type(2){
 
 /* ---------- section: Designs ---------- */
 
-#designs{
-    height: 140vh;
-    background-color: lightyellow;
+.designs-top{
+    padding: 17% 0 0% 0;
 }
 
-.containerDesignsTop{
-    text-align: center;
-    margin: 14% 0;
+.designs-top p{
+    font-size: 1.2rem;
+    font-weight: 300;
+    width: 47%;
+    margin-left: 28%;
+    word-spacing: 10px;
 }
 
-.containerDesignsMiddle{
-    border: 1px solid;
+.designs-middle{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px;
+    justify-content: space-evenly;
+    padding: 7% 0%;
 }
 
 .picDesigns{
     width: 30%;
 }
 
-.picDesigns img{
-    width: 100%;
-}
-
 figcaption{
+    letter-spacing: 2px;
+    padding: 0 7%;
     text-align: center;
 }
 
-.containerDesginsBottom{
-    margin: 20px auto;
+.designs-bottom{
+    padding: 3% 0 13% 0;
 }
+
+iframe{
+    width: 560px; 
+    height: 315px;
+    display: block;
+    margin: 0 auto;
+}
+    
+
 
 /* ---------- section: Contact ---------- */
 
