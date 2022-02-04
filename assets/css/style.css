@@ -23,6 +23,10 @@ h1, h2{
     font-family: Lora;
 }
 
+h2{
+    font-size: 2.3rem;
+}
+
 a, p{
     font-family: WorkSans;
 }
@@ -42,6 +46,7 @@ ul{
 
 img{
     width: 100%;
+    height: 100%;
 }
 
 /* ---------- generalClasses ---------- */
@@ -99,51 +104,34 @@ header article:nth-of-type(2){
 /* ---------- section: OurStory ---------- */
 
 #ourStory{
-    background-color: lightpink;
-}
-
-.story{
+    background-color: #2e2e2e;
     display: flex;
-    padding: 17vh 0;
+    padding: 18vh 0;
 }
 
-.picStory{
+.story-pic{
     width: 53%;
-    background: url(../img/story.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
 }
 
-.containerStoryText{
+.story-text{
     width: 47%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 9% 4%;
+    padding: 4% 8% 8% 6%;
 }
 
-.containerStoryText h2{
+.story-text h2, .story-text p{
     color: #fff;
+}
+
+.story-text h2{
+    text-align: center;
     margin-bottom: 10px;
 }
 
-.containerStoryText p{
-    color: #fff;
-    font-size: 1.2rem;
-    line-height: 25px;
+.story-text p{
+    text-align: justify;
+    line-height: 30px;
     margin-bottom: 20px;
 }
-
-.containerStoryText p:nth-of-type(3){
-    text-align: justify;
-}
-
-
-
-
-
-
 
 /* ---------- section: Designs ---------- */
 
