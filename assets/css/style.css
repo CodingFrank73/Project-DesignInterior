@@ -27,17 +27,24 @@ a, p{
     font-family: WorkSans;
 }
 
+p{
+    color: #000;
+}
+
 a{
     color: #fff;
-    text-decoration: none;
+    text-decoration: unset;
 }
 
 ul{
     list-style: none;
 }
 
-/* ---------- generalClasses ---------- */
+img{
+    width: 100%;
+}
 
+/* ---------- generalClasses ---------- */
 .gridContainer{
     height: 100%;
     display: grid;
@@ -45,35 +52,36 @@ ul{
 
 /* ------------ header ------------ */
 header{
-    display: grid;
+    display: flex;
     height: 100vh;
-    grid-template-columns: 40% 60%;
 }
 
-.picHeadline{
-    /* background: url(../img/design-interior-1.jpg) no-repeat center;
-    background-size: cover; */
-    width: 100%;
-}
-
-.a{
-    width: 100%;
-    height: 100%;
-}
-
-.containerLeftHeader{
+header article:nth-of-type(1){
+    width: 40%;
+    padding: 27% 0;
     text-align: center;
-    margin-top: 67%;
 }
 
-h1{
+header article:nth-of-type(1) h1{
     font-size: 4rem;
+    font-weight: 500;
+    letter-spacing: 5px;
     margin-bottom: 20px;
 }
 
-/* ------------ main ----------- */
+header article:nth-of-type(1) p{
+    font-size: 1.2rem;
+}
+
+header article:nth-of-type(2){
+    width: 60%;
+    background: url(../img/design-interior-1.jpg) no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+/* ---------- navTop ---------- */
 .navTop{
-    height: 10vh;
     position: sticky;
     top: 0px;
     background-color: #2e2e2e;
@@ -90,23 +98,51 @@ h1{
 /* ---------- section: OurStory ---------- */
 
 #ourStory{
-    height: 90vh;
     background-color: lightpink;
 }
 
 .story{
-    grid-template-columns: 60% 40%;
-    padding: 20vh 0;
+    display: flex;
+    padding: 17vh 0;
 }
 
 .picStory{
-    background: url(../img/story.jpg) no-repeat center/cover;
+    width: 53%;
+    background: url(../img/story.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .containerStoryText{
-    text-align: center;
-    margin: 25% 0;
+    width: 47%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 9% 4%;
 }
+
+.containerStoryText h2{
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.containerStoryText p{
+    color: #fff;
+    font-size: 1.2rem;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+
+.containerStoryText p:nth-of-type(3){
+    text-align: justify;
+}
+
+
+
+
+
+
 
 /* ---------- section: Designs ---------- */
 
