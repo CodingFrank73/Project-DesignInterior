@@ -92,7 +92,8 @@ header article:nth-of-type(2){
 .navLinks{
     display: flex;
     justify-content: space-between;
-    gap: 15px;
+    width: 55%;
+    margin-right: 8%;
 }
 
 /* ---------- section: OurStory ---------- */
