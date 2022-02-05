@@ -4,10 +4,6 @@ Farbe: #2e2e2e / #fff / #000 / #1d2c2f
 
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Work+Sans:wght@200;300;400;500;600&display=swap');
 
-
-/* font-family: 'Lora', serif;
-font-family: 'Work Sans', sans-serif; */
-
 *{
     margin: 0;
     padding: 0;
@@ -15,7 +11,7 @@ font-family: 'Work Sans', sans-serif; */
     scroll-behavior: smooth;
 }
 
-h1, h2{
+h1, h2, label{
     font-family: 'Lora', serif;
 }
 
@@ -48,10 +44,15 @@ img{
     height: 100%;
 }
 
-/* ---------- generalClasses ---------- */
-.gridContainer{
-    height: 100%;
-    display: grid;
+.story-text h2, .story-text p,
+#contact h2, #contact p,
+footer p, label{
+    color: #fff;
+}
+
+#ourStory, #contact{
+    background-color: #2e2e2e;
+    display: flex;
 }
 
 /* ------------ header ------------ */
@@ -103,8 +104,6 @@ header article:nth-of-type(2){
 
 /* ---------- section: OurStory ---------- */
 #ourStory{
-    background-color: #2e2e2e;
-    display: flex;
     padding: 22vh 0;
 }
 
@@ -117,10 +116,6 @@ header article:nth-of-type(2){
     padding: 4% 3% 8% 3%;
 }
 
-.story-text h2, .story-text p{
-    color: #fff;
-}
-
 .story-text p{
     font-size: 1.3rem;
     text-align: justify;
@@ -129,7 +124,6 @@ header article:nth-of-type(2){
 }
 
 /* ---------- section: Designs ---------- */
-
 .designs-top{
     padding: 17% 0 0% 0;
 }
@@ -169,23 +163,47 @@ iframe{
     margin: 0 auto;
 }
     
-
-
 /* ---------- section: Contact ---------- */
 
 #contact{
-    height: 90vh;
-    background-color: lightseagreen;
+    padding: 19% 0 21% 0;
 }
 
-.contact{
-    grid-template-columns: 60% 40%;
+.contact-text{
+    width: 60%;
+    padding: 0% 7%;
 }
 
-.contactForm{
+.contact-text h2{
+    text-align: left;
+}
+
+.contact-text p{
+    font-size: 1.2rem;
+    margin-top: 30px;
+    padding-right: 22%;
+    text-align: justify;
+    line-height: 30px;
+}
+
+.contact-form{
+    width: 40%;
+}
+
+form{
     display: grid;
+    padding: 0 33% 0 0;
 }
 
+label{
+    font-size: 1.1rem;
+    margin-bottom: 3px;
+
+}
+
+input, textarea{
+    margin-bottom: 20px;
+}
 /* ---------- footer --------- */
 
 footer{
